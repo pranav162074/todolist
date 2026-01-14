@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    background-color: #3e3e39;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#new-task {
+    margin: 20px 0;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3e3e39;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
