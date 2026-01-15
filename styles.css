@@ -13,6 +13,41 @@ h1 {
     margin: 0;
 }
 
+#task-container {
+    margin: 20px auto;
+    padding: 10px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    padding: 20px;
+    width: 23px;
+    height: 23px;
+    accent-color: #101010; /* modern browsers */
+    cursor: pointer;
+    outline: none;
+    color: #2b2a2a;
+    border-color: #101010;
+}
+
+.task-text {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 4px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
 #new-task {
     margin: 20px 0;
     padding: 10px;
