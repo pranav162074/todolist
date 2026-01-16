@@ -6,6 +6,33 @@ body {
     text-align: center;
 }
 
+body.dark {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+body.dark #task-container {
+    background-color: #2a2a2a;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+body.dark .task-item {
+    border-bottom: 1px solid #444;
+}
+
+body.dark .task-text {
+    color: #eaeaea;
+}
+
+body.dark .delete-task-btn {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark .delete-task-btn:hover {
+    background-color: #666;
+}
+
 h1 {
     background-color: #3e3e39;
     color: white;
@@ -75,4 +102,15 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
 }

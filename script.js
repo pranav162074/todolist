@@ -86,3 +86,19 @@ function updateTaskContainerVisibility() {
     const taskContainer = document.getElementById("task-container");
     taskContainer.style.display = (taskList.children.length > 0) ? "block" : "none";
 }
+
+// Theme toggle
+const themeToggleBtn = document.getElementById("theme-toggle");
+const icon = themeToggleBtn.querySelector("i");
+
+themeToggleBtn.addEventListener("click", () => {
+    // 1. Toggle dark mode class on body
+    document.body.classList.toggle("dark");
+
+    // 2. Toggle icon
+    if (document.body.classList.contains("dark")) {
+        icon.classList.replace("fa-moon", "fa-sun");
+    } else {
+        icon.classList.replace("fa-sun", "fa-moon");
+    }
+});
