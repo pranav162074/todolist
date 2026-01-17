@@ -94,6 +94,27 @@ const icon = themeToggleBtn.querySelector("i");
 themeToggleBtn.addEventListener("click", () => {
     // 1. Toggle dark mode class on body
     document.body.classList.toggle("dark");
+    /* WHAT DOES THIS ABOVE DO:
+    After first click,
+    document.body.classList.toggle("dark");
+    DOM becomes:
+    <body class="dark">
+
+    After second click,
+    <body> ONLY 
+
+    So toggle("dark") means:
+
+    If "dark" exists → remove it
+
+    If "dark" does not exist → add it
+    Equivalent logic:
+    if (document.body.classList.contains("dark")) {
+        document.body.classList.remove("dark");
+    } else {
+        document.body.classList.add("dark");
+    }
+    */
 
     // 2. Toggle icon
     if (document.body.classList.contains("dark")) {
